@@ -73,18 +73,18 @@
      data-aos-duration="3000">
         <li id="credit-card" data-state="out" >
           <div class="card credit">
-            <img src="http://imgfz.com/i/4hwgrxi.png">
+            <img src="https://imgfz.com/i/4hwgrxi.png">
           </div>
         </li>
         <li id="birthday-card" data-state="in">
           <div class="card birthday">
-            <img src="http://imgfz.com/i/pt4AWMJ.png">
+            <img src="https://imgfz.com/i/pt4AWMJ.png">
 
           </div>
         </li>
         <li id="playing-card" data-state="show">
           <div class="card playing">
-            <img src="http://imgfz.com/i/Ma2hb6w.png">
+            <img src="https://imgfz.com/i/Ma2hb6w.png">
 
           </div>
         </li>
@@ -99,11 +99,11 @@
 
       <div class="" data-aos="fade-right"
      data-aos-offset="300">
-        <img src="http://imgfz.com/i/u6pqzyj.png" alt="">
+        <img src="https://imgfz.com/i/u6pqzyj.png" alt="">
       </div>
     </div>
     <div class="col-md-6"  data-aos="fade-left"   data-aos-duration="3000">
-      <img class="gif-2" src="assets/img/test (1).gif" alt="">
+      <img class="gif-2" src="{{ url('assets/img/test (1).gif') }}" alt="">
     </div>
 
   </div>
@@ -114,7 +114,7 @@
     <div class="col-md-3" data-aos="fade-up" data-aos-duration="1000" >
       <div class="card-item">
         <div class="item-img">
-          <img src="assets/img/iconos/pagar.png" alt="">
+          <img src="{{ url('assets/img/iconos/pagar.png') }}" alt="">
         </div>
         <h3>BOTON DE PAGOS</h3>
         <p>Solución que tendrás la opción
@@ -126,7 +126,7 @@
     <div class="col-md-3"  data-aos="fade-up" data-aos-duration="1500">
       <div class="card-item">
         <div class="item-img blue-bg">
-          <img class="card-item-img1" src="assets/img/iconos/link (1).png" alt="">
+          <img class="card-item-img1" src="{{ url('assets/img/iconos/link (1).png') }}" alt="">
         </div>
         <h3>LINK DE PAGOS</h3>
         <p>Una URL que tendrás la opción
@@ -139,7 +139,7 @@
     <div class="col-md-3"  data-aos="fade-up" data-aos-duration="2000">
       <div class="card-item">
         <div class="item-img">
-          <img class="card-item-img2" src="assets/img/iconos/api (1).png" alt="">
+          <img class="card-item-img2" src="{{ url('assets/img/iconos/api (1).png') }}" alt="">
         </div>
         <h3>INTEGRACIÓN
           API REST</h3>
@@ -153,7 +153,7 @@
     <div class="col-md-3"  data-aos="fade-up" data-aos-duration="2500">
       <div class="card-item">
         <div class="item-img blue-bg">
-          <img class="card-item-img2" src="assets/img/iconos/mapa-del-sitio.png" alt="">
+          <img class="card-item-img2" src="{{ url('assets/img/iconos/mapa-del-sitio.png') }}" alt="">
         </div>
         <h3>MICROSITIOS DE
           RECAUDO</h3>
@@ -182,16 +182,16 @@
       <div class="col-md-6">
         <div class="row">
           <div class="col-md-6" data-aos="fade-left"   data-aos-duration="1500">
-            <img src="assets/img/logos/Logo-GM1st-New_50years.png" alt="">
+            <img src="{{ url('assets/img/logos/Logo-GM1st-New_50years.png') }}" alt="">
           </div>
           <div class="col-md-6" data-aos="fade-left"   data-aos-duration="2000">
-            <img style="  width: 100px;" src="assets/img/original.jpeg" alt="">
+            <img style="  width: 100px;" src="{{ url('assets/img/original.jpeg') }}" alt="">
           </div>
           <div class="col-md-6" data-aos="fade-left"   data-aos-duration="2500">
-            <img style="    width: 100px;" src="assets/img/original.jpeg" alt="">
+            <img style="    width: 100px;" src="{{ url('assets/img/original.jpeg') }}" alt="">
           </div>
           <div class="col-md-6" data-aos="fade-left"   data-aos-duration="3000">
-            <img src="assets/img/logos/Logo-GM1st-New_50years.png" alt="">
+            <img src="{{ url('assets/img/logos/Logo-GM1st-New_50years.png') }}" alt="">
           </div>
 
         </div>
@@ -211,7 +211,7 @@
         <div class="trarifas-img">
           <img src="https://image.freepik.com/foto-gratis/chica-joven-gerente-cambiando-cartel-cerrado-abierto-cafeteria-puerta-mirando-afuera-esperando-clientes-despues-cierre_7861-3174.jpg" alt="">
 
-          <img class="vector-tarifas" src="assets/img/Vector.svg" alt="">
+          <img class="vector-tarifas" src="{{ url('assets/img/Vector.svg') }}" alt="">
         </div>
         <h3>Pequeñas empresas</h3>
         <p>
@@ -231,7 +231,7 @@
       <div class="tarifas-item pb-4">
         <div class="trarifas-img">
           <img src="https://image.freepik.com/foto-gratis/grupo-personas-trabajando-plan-negocios-oficina_1303-15870.jpg" alt="">
-          <img class="vector-tarifas" src="assets/img/Vector.svg" alt="">
+          <img class="vector-tarifas" src="{{ url('assets/img/Vector.svg') }}" alt="">
         </div>
         <h3>Empresas que facturen más
           de 50 millones de pesos
@@ -252,7 +252,7 @@
       <div class="tarifas-item pb-4">
         <div class="trarifas-img">
           <img src="https://img.freepik.com/foto-gratis/retrato-mujer-trabajadora-servicio-al-cliente_144627-37943.jpg?size=338&ext=jpg" alt="">
-          <img class="vector-tarifas" src="assets/img/Vector.svg" alt="">
+          <img class="vector-tarifas" src="{{ url('assets/img/Vector.svg') }}" alt="">
         </div>
 
         <h3>Modelo Gateway</h3>
@@ -281,19 +281,19 @@
       <p class="txt-banco">con PSE</p>
     </div>
     <div class="col-md-4 flex-custom" data-aos="fade-up" data-aos-duration="1200">
-      <img class="logo-pse" src="assets/img/logos/logo-pse.png" alt="">
+      <img class="logo-pse" src="{{ url('assets/img/logos/logo-pse.png') }}" alt="">
     </div>
     <div class="col-md-4 flex-custom"data-aos="fade-up" data-aos-duration="1500">
-      <img class="logo-bcolombia" src="assets/img/logos/boton baancolombia.png" alt="">
+      <img class="logo-bcolombia" src="{{ url('assets/img/logos/boton baancolombia.png') }}" alt="">
     </div>
     <div class="col-md-4 flex-custom" data-aos="fade-up" data-aos-duration="2000">
-      <img class="logo-bogota" src="assets/img/logos/Banco_de_Bogotá_logo.svg.png" alt="">
+      <img class="logo-bogota" src="{{ url('assets/img/logos/Banco_de_Bogotá_logo.svg.png') }}" alt="">
     </div>
     <div class="col-md-4 flex-custom" data-aos="fade-up" data-aos-duration="2500">
-      <img class="logo-davi" src="assets/img/logos/Davivienda-Logo.png" alt="">
+      <img class="logo-davi" src="{{ url('assets/img/logos/Davivienda-Logo.png') }}" alt="">
     </div>
     <div class="col-md-4 flex-custom" data-aos="fade-up" data-aos-duration="3000">
-      <img class="logo-bbva" src="assets/img/logos/bbva.png" alt="">
+      <img class="logo-bbva" src="{{ url('assets/img/logos/bbva.png') }}" alt="">
     </div>
   </div>
   <div class="text-center mt-3">
@@ -304,10 +304,10 @@
 <section class="custom-admin  container">
   <div class="row">
     <div class="col-md-6" data-aos="zoom-in" data-aos-duration="2000">
-      <img src="assets/img/admin.png" alt="">
+      <img src="{{ url('assets/img/admin.png') }}" alt="">
     </div>
     <div class="col-md-6 center-justify" data-aos="fade-up" data-aos-duration="3000">
-      <p><strong>Acepta <img class="custom-admin-img" src="assets/img/logos/logo.svg" alt="">
+      <p><strong>Acepta <img class="custom-admin-img" src="{{ url('assets/img/logos/logo.svg') }}" alt="">
         </strong></p>
       <p><strong>y administra fácil con
         </strong></p>
