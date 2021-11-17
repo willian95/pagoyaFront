@@ -786,7 +786,7 @@ body {
   box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.28);
   border-radius: 20px;
   margin: 1rem;
-  min-height: 66vh;
+  min-height: 70vh;
   overflow: hidden;
 }
 .tarifas-item h3 {
