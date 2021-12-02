@@ -265,7 +265,7 @@
           acuerdo al modelo de
           negocio.
         </p>
-        <div class="text-center">
+        <div class="text-center mt-">
           <a href="" class="btn-info" data-toggle="modal" data-target=".contact-modal">Contáctanos</a>
         </div>
       </div>

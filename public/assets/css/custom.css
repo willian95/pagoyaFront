@@ -1458,3 +1458,6 @@ white; */
 .mb-06{
     margin-bottom: 0.6rem!important;
 }
+.mt-{
+    margin-top: -1.6rem!important;
+}
