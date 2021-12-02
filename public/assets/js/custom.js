@@ -62,7 +62,7 @@ $(".clic-nav").on("click", function () {
   }, false);
 })();*/
 ("use strict");
-console.clear();
+/*console.clear();*/
 const hangTime = 2000;
 const spinTime = 300;
 document.documentElement.style.setProperty("--hang-time", hangTime / 1000);
@@ -83,3 +83,23 @@ let nextCard = () => {
 };
 setInterval(() => nextCard(), hangTime);
 nextCard();
+
+
+
+$('.container-menu ').removeClass('w-auto')
+$('#menuBtn').on('click', function () {
+    $('.container-menu ').addClass('w-auto')
+  })
+
+$(function (){
+    $(window).scroll(function(){
+       if ($(this).scrollTop() > 500) {
+        $('.header-nav').addClass("header-fix");
+        $('nav').addClass("nav-bg");
+
+       } else {
+        $('.header-nav').removeClass("header-fix");
+        $('nav').removeClass("nav-bg");
+       }
+    });
+  });

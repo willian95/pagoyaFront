@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="{{ url('assets/css/font-awosome.css') }}" />
     <link rel="stylesheet" href="{{ url('assets/css/custom.css') }}" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url('assets/img/iso1.png')}}">
+    <title>PagoYa</title>
 
-    <title>PagosYa</title>
   </head>
 
   <body>

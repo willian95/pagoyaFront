@@ -79,13 +79,13 @@
         </li>
         <li id="birthday-card" data-state="in">
           <div class="card birthday">
-            <img src="http://imgfz.com/i/pt4AWMJ.png">
+            <img src="http://imgfz.com/i/dRENlDk.png">
 
           </div>
         </li>
         <li id="playing-card" data-state="show">
           <div class="card playing">
-            <img src="http://imgfz.com/i/Ma2hb6w.png">
+            <img src="http://imgfz.com/i/Ca2kR4H.png">
 
           </div>
         </li>
@@ -202,7 +202,7 @@
 
 </section>
 
-<section class="tarifas container">
+<section class="tarifas ">
   <h3 data-aos="fade-up"
      data-aos-duration="3000" class="title mb-5 ">Tarifas</h3>
 
@@ -216,7 +216,7 @@
         </div>
         <h3>Pequeñas empresas</h3>
         <p>
-          Tarifas estándar <br>
+          Tarifas estándar
           <strong> 3.4% + 700 pesos ( +IVA)</strong>
           Aplica para todos los
           medios de pago
