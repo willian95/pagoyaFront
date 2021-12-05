@@ -1,6 +1,6 @@
 @include("partials.loader")
 <nav class="navbar navbar-light main-nav container-fluid pl-5 pr-5">
-    <a class="navbar-brand" href="index.php"><img src="{{ url('assets/img/logos/logo.svg') }}" alt="" /></a>
+    <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ url('assets/img/logos/logo.svg') }}" alt="" /></a>
     <ul class="navbar-nav">
       <li class="nav-item active">
         <a class="nav-link mr-4 txt-blue" href="#" data-toggle="modal" data-target=".regsitro">Regístrate <span class="sr-only">(current)</span></a>
