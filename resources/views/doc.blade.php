@@ -50,7 +50,7 @@
                 $q->where("order", 1);
               })->orderBy('order', "asc")->first()->slug;
             @endphp
-            <a target="_blank" href="{{ url('/doc/download/'.) }}"> Descargar </a>
+            <a target="_blank" href="{{ url('/doc/download/'.$category_slug) }}"> Descargar </a>
           </div>
         </div>
 
