@@ -59,6 +59,8 @@
             @if($category_slug)
             <a target="_blank" href="{{ url('/doc/download/'.$category_slug) }}"> Descargar </a>
             @endif
+
+            {{ $category_slug }}
           </div>
         </div>
 
