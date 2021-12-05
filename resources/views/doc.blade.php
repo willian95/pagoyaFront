@@ -48,7 +48,11 @@
             @php  
               $category_slug = App\Models\Doc::whereHas("category", function($q){
                 $q->where("order", 1);
-              })->orderBy('order', "asc")->first()->slug;
+              })->orderBy('order', "asc")->first();
+
+              if($category_slug){
+                $category_slug = $category_slug->slug;
+              }
             @endphp
             <a target="_blank" href="{{ url('/doc/download/'.$category_slug) }}"> Descargar </a>
           </div>
