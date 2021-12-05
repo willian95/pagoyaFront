@@ -1,5 +1,4 @@
-dd($category_slug);
-<img src="{{ url('/assets/img/logos/logo.svg') }}" alt="">
+<img style="width: 150px;" src="{{ url('/assets/img/logos/logo.svg') }}" alt="">
 
 
 @foreach(
