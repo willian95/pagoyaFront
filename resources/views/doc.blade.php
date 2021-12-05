@@ -54,6 +54,8 @@
 
               
             @endphp
+            
+            {{ $category_model->id }}
 
             @if($category_model)
               @if($category_model->slug)
