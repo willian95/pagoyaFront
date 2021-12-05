@@ -1,4 +1,4 @@
-<img style="width: 150px;" src="{{ url('/assets/img/logos/logo.svg') }}" alt="">
+<img style="width: 150px;" src="{{ public_path('/assets/img/logos/logo.svg') }}" alt="">
 
 
 @foreach(
