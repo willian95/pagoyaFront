@@ -51,8 +51,6 @@
                 $q->where("order", 1);
               })->orderBy('order', "asc")->first();
 
-              dd($category_model);
-
               if($category_model){
                 $category_slug = $category_model->slug;
               }
@@ -62,7 +60,7 @@
             <a target="_blank" href="{{ url('/doc/download/'.$category_slug) }}"> Descargar </a>
             @endif
 
-            {{ $category_slug }}
+            {{ $category_model->slug }}
           </div>
         </div>
 
