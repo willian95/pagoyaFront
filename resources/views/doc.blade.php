@@ -55,11 +55,11 @@
               
             @endphp
             
-            {{ $category_model->id }}
+            {{ $category_model->slug }}
 
             @if($category_model)
               @if($category_model->slug)
-              <a target="_blank" href="{{ url('/doc/download/'.$category_slug) }}"> Descargar </a>
+              <a target="_blank" href="{{ url('/doc/download/'.$category_model->slug) }}"> Descargar </a>
               @endif
             @endif
 
