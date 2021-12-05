@@ -46,12 +46,13 @@
         <div class="row">
           <div class="col-12">
             @php  
-              $category_slug = App\Models\Doc::whereHas("category", function($q){
+              $category_slug = "";
+              $category_model = App\Models\Doc::whereHas("category", function($q){
                 $q->where("order", 1);
               })->orderBy('order', "asc")->first();
 
-              if($category_slug){
-                $category_slug = $category_slug->slug;
+              if($category_model){
+                $category_slug = $category_model->slug;
               }
             @endphp
 
