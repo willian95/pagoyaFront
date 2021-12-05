@@ -48,9 +48,7 @@
             @php  
               $category_slug = "";
 
-              $category_model = App\Models\Doc::whereHas("category", function($q){
-                $q->where("order", 1);
-              })->orderBy('order', "asc")->first();
+              $category_model = App\Models\Category::where("order", 1)->first();
 
               
             @endphp
