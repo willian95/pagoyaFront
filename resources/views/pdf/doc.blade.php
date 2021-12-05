@@ -2,10 +2,10 @@ dd($category_slug);
 <img src="{{ url('/assets/img/logos/logo.svg') }}" alt="">
 
 
-    @foreach(
-    App\Models\Doc::whereHas("category", function($q){
-        $q->where("order", 1);
-    })->orderBy('order', "asc")->get() as $doc
+@foreach(
+    App\Models\Doc::whereHas("category", function($q) use($category_slug){
+        $q->where("slug", $category_slug);
+    })->get() as $doc
     )
 
     <h3>{{ $doc->title }}</h3>
