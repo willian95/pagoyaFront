@@ -92,7 +92,7 @@
 
   </div>
   <div class="menu-options">
-    <a href="https://api.whatsapp.com/send?phone=+5800000" target="_blank" class="icons hover-ws" >
+    <a href="https://api.whatsapp.com/send?phone={{ App\Models\WhatsappPhoneNumber::first()->number }}" target="_blank" class="icons hover-ws" >
       <p>
         Nuestros horarios para atenderte por Business WhatsApp son de <br />
         <strong>Lunes a Viernes 8 AM - 6 PM</strong>

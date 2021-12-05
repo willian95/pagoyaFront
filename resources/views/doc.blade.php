@@ -20,7 +20,11 @@
     </div>
     <div class="col-md-9 ">
       <div class="doc-content">
-
+        <div class="row">
+          <div class="col-12">
+            <a target="_blank" href="{{ url('/doc/download/'.$category_slug) }}"> Descargar </a>
+          </div>
+        </div>
         @if(strpos(url()->current(), "category") > -1)
 
           @foreach(
@@ -40,7 +44,7 @@
           @foreach(
             App\Models\Doc::whereHas("category", function($q){
               $q->where("order", 1);
-            })->get() as $doc
+            })->orderBy('order', "asc")->get() as $doc
           )
 
             <h3>{{ $doc->title }}</h3>
