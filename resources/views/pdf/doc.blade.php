@@ -1,5 +1,4 @@
 <img style="width: 150px;" src="{{ public_path().'/assets/img/iso1.png' }}" alt="">
-{{ public_path().'/assets/img/logos/logo.svg' }}
 
 @foreach(
     App\Models\Doc::whereHas("category", function($q) use($category_slug){
