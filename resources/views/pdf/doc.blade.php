@@ -1,4 +1,4 @@
-<img style="width: 150px;" src="{{ public_path().'/assets/img/iso1.png' }}" alt="">
+<img style="width: 70px;" src="{{ public_path().'/assets/img/iso1.png' }}" alt="">
 
 @foreach(
     App\Models\Doc::whereHas("category", function($q) use($category_slug){

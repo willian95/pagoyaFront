@@ -142,36 +142,6 @@
   </div>
 </div>
 
-<!-- blog--->
-<div class="modal fade blog-modal " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-body pt-5 pb-4">
-
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-
-        <div class="row">
-
-          <div class="col-md-12">
-            <h3 class="title pb-0 pt-0">Titulo del articulo</h3>
-            <div class="time-icons ml-0">
-              <img src="assets/img/iconos/calendar.png" alt="">
-              <p>27/1/0/2021</p>
-            </div>
-            <img class="img-blog" src="https://images.unsplash.com/photo-1571715268998-d6e79bed5fc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" alt="">
-
-            <div class="parraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident alias optio sed, placeat similique tenetur eum nihil dolorem, eos magnam consequatur rem facere delectus porro? Alias velit ipsa ex quis?</div>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- faqg--->
 <div class="modal fade faq " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
