@@ -52,8 +52,6 @@
 
               
             @endphp
-            
-            {{ $category_model->name }}
 
             @if($category_model)
               @if($category_model->slug)
