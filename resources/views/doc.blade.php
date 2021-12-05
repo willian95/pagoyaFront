@@ -54,7 +54,10 @@
                 $category_slug = $category_slug->slug;
               }
             @endphp
+
+            @if($category_slug)
             <a target="_blank" href="{{ url('/doc/download/'.$category_slug) }}"> Descargar </a>
+            @endif
           </div>
         </div>
 
