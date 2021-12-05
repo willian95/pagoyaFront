@@ -1,5 +1,5 @@
-<img style="width: 150px;" src="{{ public_path().'assets/img/logos/logo.svg' }}" alt="">
-{{ public_path().'assets/img/logos/logo.svg' }}
+<img style="width: 150px;" src="{{ public_path().'/assets/img/logos/logo.svg' }}" alt="">
+{{ public_path().'/assets/img/logos/logo.svg' }}
 
 @foreach(
     App\Models\Doc::whereHas("category", function($q) use($category_slug){
