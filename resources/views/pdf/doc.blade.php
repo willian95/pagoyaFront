@@ -1,20 +1,6 @@
+dd($category_slug);
 <img src="{{ url('/assets/img/logos/logo.svg') }}" alt="">
 
-@if(strpos(url()->current(), "category") > -1)
-
-    @foreach(
-    App\Models\Doc::whereHas("category", function($q) use($category_slug){
-        $q->where("slug", $category_slug);
-    })->get() as $doc
-    )
-
-    <h3>{{ $doc->title }}</h3>
-
-    {!! $doc->description !!}
-
-    @endforeach
-
-@else
 
     @foreach(
     App\Models\Doc::whereHas("category", function($q){
@@ -28,6 +14,3 @@
 
     @endforeach
     
-
-
-@endif
