@@ -214,6 +214,7 @@
 
           <img class="vector-tarifas" src="assets/img/Vector.svg" alt="">
         </div>
+        <div class="tarifas-content">
         <h3>Pequeñas empresas</h3>
         <p>
           Tarifas estándar
@@ -223,6 +224,8 @@
 
           Términos y condiciones
         </p>
+        </div>
+
         <div class="text-center">
           <a href="" class="btn-info" data-toggle="modal" data-target=".contact-modal">Contáctanos</a>
         </div>
@@ -234,6 +237,7 @@
           <img src="https://image.freepik.com/foto-gratis/grupo-personas-trabajando-plan-negocios-oficina_1303-15870.jpg" alt="">
           <img class="vector-tarifas" src="assets/img/Vector.svg" alt="">
         </div>
+        <div class="tarifas-content">
         <h3>Empresas que facturen más
           de 50 millones de pesos
           mensuales</h3>
@@ -244,6 +248,8 @@
           Contáctanos para mayor
           información.
         </p>
+        </div>
+
         <div class="text-center">
           <a href="" class="btn-info" data-toggle="modal" data-target=".contact-modal">Contáctanos</a>
         </div>
@@ -256,7 +262,8 @@
           <img class="vector-tarifas" src="assets/img/Vector.svg" alt="">
         </div>
 
-        <h3>Modelo Gateway</h3>
+       <div class="tarifas-content">
+       <h3>Modelo Gateway</h3>
         <p>
           Modelo en el que el dinero llega directamente
           a la cuenta del comercio,
@@ -265,6 +272,7 @@
           acuerdo al modelo de
           negocio.
         </p>
+       </div>
         <div class="text-center mt-">
           <a href="" class="btn-info" data-toggle="modal" data-target=".contact-modal">Contáctanos</a>
         </div>
