@@ -7,9 +7,24 @@
 
 <section class="banner-content">
   <div class="">
-    <video loop muted autoplay fullscreen class="fullscreen-bg__video" poster="https://images.unsplash.com/photo-1571715268998-d6e79bed5fc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80">
-      <source src="https://patriciax.github.io/aidacaceres/assets/img/banner1.mp4" type="video/mp4">
+
+    @if(App\Models\Header::first()->type == 'image')
+
+      <img src="{{ App\Models\Header::first()->image }}" alt="" class="w-100">
+
+    @else
+
+      {{--<video loop muted autoplay fullscreen class="fullscreen-bg__video" poster="https://images.unsplash.com/photo-1571715268998-d6e79bed5fc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80">
+        <source src="https://patriciax.github.io/aidacaceres/assets/img/banner1.mp4" type="video/mp4">
+      </video>--}}
+
+      <video loop muted autoplay fullscreen class="fullscreen-bg__video">
+      <source src="{{ App\Models\Header::first()->image }}#t=0.1" type="video/mp4">
     </video>
+
+    @endif
+
+    
 
 </section>
 
@@ -329,5 +344,5 @@
   </div>
 </section>
 
-
+@include("partials.footer")
 @endsection

@@ -1,6 +1,6 @@
 @include("partials.loader")
 <nav class="navbar navbar-light main-nav container-fluid pl-5 pr-5">
-    <a class="navbar-brand" href="index.php"><img src="{{ url('assets/img/logos/logo.svg') }}" alt="" /></a>
+    <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ url('assets/img/logos/logo.svg') }}" alt="" /></a>
     <ul class="navbar-nav">
       <li class="nav-item active">
         <a class="nav-link mr-4 txt-blue" href="#" data-toggle="modal" data-target=".regsitro">Regístrate <span class="sr-only">(current)</span></a>
@@ -52,7 +52,7 @@
 
 
 
-      <a data-text="TOURS" href="blog.php" class="style-a">
+      <a data-text="TOURS" href="{{ url('/blog') }}" class="style-a">
         <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 172 172" style=" fill:#000000;">
           <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
             <path d="M0,172v-172h172v172z" fill="none"></path>
@@ -92,7 +92,7 @@
 
   </div>
   <div class="menu-options">
-    <a href="https://api.whatsapp.com/send?phone=+5800000" target="_blank" class="icons hover-ws" >
+    <a href="https://api.whatsapp.com/send?phone={{ App\Models\WhatsappPhoneNumber::first()->number }}" target="_blank" class="icons hover-ws" >
       <p>
         Nuestros horarios para atenderte por Business WhatsApp son de <br />
         <strong>Lunes a Viernes 8 AM - 6 PM</strong>

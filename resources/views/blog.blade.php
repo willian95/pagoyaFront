@@ -5,50 +5,55 @@
 @include("partials.header")
 <div class="timeline-wrap" >
   <ul class="timeline timeline--first">
-  
+    
+    @foreach(App\Models\Blog::all() as $blog)
     <li class="entry entry--left">
-      <div class="link-modal" data-toggle="modal" data-target=".blog-modal">
+      <div class="link-modal" data-toggle="modal" data-target=".blog-modal-{{ $blog->id }}">
 
       <div class="entry__content">
-      <h2 class="titulo">Titulo del articulo</h2>
+      <h2 class="titulo">{{ $blog->title }}</h2>
       <div class="time-icons">
         <img src="assets/img/iconos/calendar.png" alt="">
-        <p>27/1/0/2021</p>
+        <p>{{ $blog->created_at->format('d/m/Y') }}</p>
       </div>
-        <img src="https://images.unsplash.com/photo-1571715268998-d6e79bed5fc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" alt="">
+        
+        <img src="{{ $blog->image }}" alt="">
   
       </div>
       </div>
      
     </li>
-    <li class="entry entry--right">
-    <div class="link-modal" data-toggle="modal" data-target=".blog-modal">
-      <div class="entry__content">
-      <h2  class="titulo">Titulo del articulo</h2>
-      <div class="time-icons">
-        <img src="assets/img/iconos/calendar.png" alt="">
-        <p>27/1/0/2021</p>
-      </div>
-      <img src="https://images.unsplash.com/photo-1571715268998-d6e79bed5fc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" alt="">
 
-       
-      </div>
-      </div>
-    </li>
-    <li class="entry entry--left">
-    <div class="link-modal" data-toggle="modal" data-target=".blog-modal">
-      <div class="entry__content">
-      <h2  class="titulo">Titulo del articulo</h2>
-      <div class="time-icons">
-        <img src="assets/img/iconos/calendar.png" alt="">
-        <p>27/1/0/2021</p>
-      </div>
-      <img src="https://images.unsplash.com/photo-1571715268998-d6e79bed5fc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" alt="">
+    <!-- blog--->
+    <div class="modal fade blog-modal-{{ $blog->id }} " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body pt-5 pb-4">
 
-     
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+            <div class="row">
+
+              <div class="col-md-12">
+                <h3 class="title pb-0 pt-0">{{ $blog->title }}</h3>
+                <div class="time-icons ml-0">
+                  <img src="assets/img/iconos/calendar.png" alt="">
+                  <p>{{ $blog->created_at->format('d/m/Y') }}</p>
+                </div>
+                <img class="img-blog" src="{{ $blog->image }}" alt="">
+
+                <div class="parraf">{!! $blog->description !!}</div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
-      </div>
-    </li>
+    </div>
+    @endforeach
   </ul>
 </div>
 

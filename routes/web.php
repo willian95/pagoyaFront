@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\DocPdfController;
+use App\Http\Controllers\RegisterUserController;
+use App\Http\Controllers\ProspectController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,6 +33,11 @@ Route::get("/doc/category/{category_slug}", function($category_slug){
     return view("doc",["category_slug"=>$category_slug]);
 });
 
+Route::get("/doc/download/{category_slug}", [DocPdfController::class, "download"]);
+
 Route::get("/blog", function(){
     return view("blog");
 });
+
+Route::post("/register/user", [RegisterUserController::class, "register"]);
+Route::post("/prospect/user", [ProspectController::class, "register"]);

@@ -20,8 +20,14 @@
     </div>
     <div class="col-md-9 ">
       <div class="doc-content">
-
+        
         @if(strpos(url()->current(), "category") > -1)
+
+        <div class="row">
+          <div class="col-12">
+            <a target="_blank" href="{{ url('/doc/download/'.$category_slug) }}"> Descargar </a>
+          </div>
+        </div>
 
           @foreach(
             App\Models\Doc::whereHas("category", function($q) use($category_slug){
@@ -37,10 +43,29 @@
         
         @else
 
+        <div class="row">
+          <div class="col-12">
+            @php  
+              $category_slug = "";
+
+              $category_model = App\Models\Category::where("order", 1)->first();
+
+              
+            @endphp
+
+            @if($category_model)
+              @if($category_model->slug)
+              <a target="_blank" href="{{ url('/doc/download/'.$category_model->slug) }}"> Descargar </a>
+              @endif
+            @endif
+
+          </div>
+        </div>
+
           @foreach(
             App\Models\Doc::whereHas("category", function($q){
               $q->where("order", 1);
-            })->get() as $doc
+            })->orderBy('order', "asc")->get() as $doc
           )
 
             <h3>{{ $doc->title }}</h3>
