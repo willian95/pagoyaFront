@@ -20,15 +20,15 @@
         </button>
         <div class="header-sesion">
           <h3>CMS Login</h3>
-          <img src="assets/img/logos/logo.svg" alt="" />
+          <img src="{{ url('assets/img/logos/logo.svg') }}" alt="" />
         </div>
         <form action="" class="form-sesion">
           <div class="form-conetnt">
-            <img src="assets/img/iconos/sGroup.svg" alt="" />
+            <img src="{{ url('assets/img/iconos/sGroup.svg') }}" alt="" />
             <input class="form-control" type="text" placeholder="Usuario" />
           </div>
           <div class="form-conetnt">
-            <img class="padlock" src="assets/img/iconos/padlock.png" alt="" />
+            <img class="padlock" src="{{ url('assets/img/iconos/padlock.png') }}" alt="" />
             <input class="form-control" type="password" placeholder="Contraseña" />
           </div>
           <button class="btn-custom">Ingresar</button>
@@ -47,31 +47,31 @@
         </button>
         <div class="header-sesion">
           <h3>Registrarme en</h3>
-          <img src="assets/img/logos/logo.svg" alt="" />
+          <img src="{{ url('assets/img/logos/logo.svg') }}" alt="" />
         </div>
         <form action="" class="form-sesion">
           <div class="form-conetnt">
-            <img src="assets/img/iconos/sGroup.svg" alt="" />
+            <img src="{{ url('assets/img/iconos/sGroup.svg') }}" alt="" />
             <input class="form-control" type="text" placeholder="Nombre y apellido" id="register_name" />
             
           </div>
           <p style="color: red; font-size:12px; display: none;" id="error_register_name"></p>
           <div class="form-conetnt">
-            <img class="email" src="assets/img/iconos/sms.svg" alt="" />
+            <img class="email" src="{{ url('assets/img/iconos/sms.svg') }}" alt="" />
             <input class="form-control" type="text" placeholder="Email" id="register_email"/>
             
           </div>
           <p style="color: red; font-size:12px; display: none;" id="error_register_email"></p>
 
           <div class="form-conetnt">
-            <img class="phone" src="assets/img/iconos/phonea.svg" alt="" />
+            <img class="phone" src="{{ url('assets/img/iconos/phonea.svg') }}" alt="" />
             <input class="form-control" type="text " placeholder="+57 (310) 123 4567" id="register_phone"/>
             
           </div>
           <p style="color: red; font-size:12px; display: none;" id="error_register_phone"></p>
 
           <div class="form-conetnt">
-            <img class="cargo" src="assets/img/iconos/user (1).png" alt="" />
+            <img class="cargo" src="{{ url('assets/img/iconos/user (1).png') }}" alt="" />
             <input class="form-control" type="text" placeholder=" Cargo" id="register_cargo"/>
             
           </div>
@@ -92,7 +92,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-body pt-5 pb-4">
-        <img class="line-sahpe" src="assets/img/shape.png" alt="">
+        <img class="line-sahpe" src="{{ url('assets/img/shape.png') }}" alt="">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -118,7 +118,7 @@
                 </div>
                 <div class="col-md-6 mb-3">
                   <div class="form-conetnt">
-                    <img class="email" src="assets/img/iconos/sms.svg" alt="" />
+                    <img class="email" src="{{ url('assets/img/iconos/sms.svg') }}" alt="" />
                     <input class="form-control" type="text" placeholder="Email" id="prospect_email" />
                   </div>
                   <p style="color: red; font-size:12px; display: none; margin-top: 0px" id="error_prospect_email"></p>
@@ -133,7 +133,7 @@
                 </div>
                 <div class="col-md-6 mb-3">
                   <div class="form-conetnt">
-                    <img class="cargo" src="assets/img/iconos/user (1).png" alt="" />
+                    <img class="cargo" src="{{ url('assets/img/iconos/user (1).png') }}" alt="" />
                     <input class="form-control" type="text" placeholder=" Cargo" id="prospect_cargo" />
                   </div>
                   <p style="color: red; font-size:12px; display: none; margin-top: 0px" id="error_prospect_cargo"></p>

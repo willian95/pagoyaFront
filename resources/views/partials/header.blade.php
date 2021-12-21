@@ -112,6 +112,6 @@
 
   <p data-aos="zoom-out" class="btn-contact" data-toggle="modal" data-target=".contact-modal">Contáctanos</p>
   <div class="main-banner_shape">
-    <img src="assets/img/Vector.svg" alt="">
+    <img src="{{ url('assets/img/Vector.svg') }}" alt="">
   </div>
   </div>
