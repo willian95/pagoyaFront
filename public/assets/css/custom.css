@@ -796,6 +796,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+        position: absolute;
+    bottom: 3rem;
+    width: 85%;
 }
 .tarifas-item h3 {
   font-family: Poppins;
@@ -1460,4 +1463,7 @@ white; */
 }
 .mt-{
     margin-top: -1.6rem!important;
+}
+.tarifas-content{
+    height: 30vh;
 }
