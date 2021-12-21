@@ -13,7 +13,7 @@
       <div class="entry__content">
       <h2 class="titulo">{{ $blog->title }}</h2>
       <div class="time-icons">
-        <img src="assets/img/iconos/calendar.png" alt="">
+        <img src="{{ url('assets/img/iconos/calendar.png') }}" alt="">
         <p>{{ $blog->created_at->format('d/m/Y') }}</p>
       </div>
         
