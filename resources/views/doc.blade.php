@@ -20,7 +20,7 @@
     </div>
     <div class="col-md-9 ">
       <div class="doc-content">
-        
+
         @if(strpos(url()->current(), "category") > -1)
 
         <div class="row">
@@ -40,17 +40,17 @@
             {!! $doc->description !!}
 
           @endforeach
-        
+
         @else
 
         <div class="row">
           <div class="col-12">
-            @php  
+            @php
               $category_slug = "";
 
               $category_model = App\Models\Category::where("order", 1)->first();
 
-              
+
             @endphp
 
             @if($category_model)
@@ -73,13 +73,13 @@
             {!! $doc->description !!}
 
           @endforeach
-            
-        
+
+
 
         @endif
-        
+
       </div>
-    
+
     </div>
 
 
@@ -90,6 +90,12 @@
 
 
 <style>
+    .doc-content a{
+        color: #3a596e;
+    }
+    .main-banner_shape{
+        display:none!important;
+    }
   .txt-blue {
     color: #0e3752 !important;
   }
@@ -136,7 +142,7 @@
     margin-left: 5rem;
   }
 
- 
+
 </style>
 
 @include("partials.footer")

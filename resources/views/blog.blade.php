@@ -5,7 +5,7 @@
 @include("partials.header")
 <div class="timeline-wrap" >
   <ul class="timeline timeline--first">
-    
+
     @foreach(App\Models\Blog::all() as $blog)
     <li class="entry entry--left">
       <div class="link-modal" data-toggle="modal" data-target=".blog-modal-{{ $blog->id }}">
@@ -16,17 +16,17 @@
         <img src="assets/img/iconos/calendar.png" alt="">
         <p>{{ $blog->created_at->format('d/m/Y') }}</p>
       </div>
-        
+
         <img src="{{ $blog->image }}" alt="">
-  
+
       </div>
       </div>
-     
+
     </li>
 
     <!-- blog--->
     <div class="modal fade blog-modal-{{ $blog->id }} " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-body pt-5 pb-4">
 
