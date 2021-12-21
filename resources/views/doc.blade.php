@@ -22,12 +22,27 @@
       <div class="doc-content">
         
         @if(strpos(url()->current(), "category") > -1)
+        
+        <?php $hasData = false; ?>
+        @foreach(
+            App\Models\Doc::whereHas("category", function($q) use($category_slug){
+              $q->where("slug", $category_slug);
+            })->get() as $doc
+          )
 
+          @if(strlen($doc->description) > 0)
+          <?php $hasData = true; ?>
+          @endif
+
+        @endforeach
+          
+          @if($hasData == true)
         <div class="row">
           <div class="col-12">
             <a target="_blank" href="{{ url('/doc/download/'.$category_slug) }}"> Descargar </a>
           </div>
         </div>
+        @endif
 
           @foreach(
             App\Models\Doc::whereHas("category", function($q) use($category_slug){
